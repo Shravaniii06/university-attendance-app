@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Attendance App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="profile">
+            <img src="https://i.pravatar.cc/150?img=12">
+            <h3>Shravani</h3>
+            <p>View Profile</p>
+        </div>
+
+        <ul class="menu">
+            <li>Dashboard</li>
+            <li>News</li>
+            <li>Calendar</li>
+            <li>Student Education Portal</li>
+            <li>Finance</li>
+            <li>Forms</li>
+            <li>Contact</li>
+            <li>Notifications</li>
+            <li>Logout</li>
+        </ul>
+    </aside>
+
+    <!-- Attendance Section -->
+    <main class="main">
+
+        <div class="card attendance-card">
+            <div class="header">
+                <span class="menu-icon">☰</span>
+                <h2>Attendance</h2>
+            </div>
+
+            <div class="month-selector">
+                <button onclick="prevMonth()">‹</button>
+                <span id="monthName"></span>
+                <button onclick="nextMonth()">›</button>
+            </div>
+
+            <table id="calendar"></table>
+
+            <div class="summary">
+                <div class="box red">
+                    <h3>13</h3>
+                    <p>Total Absent</p>
+                </div>
+                <div class="box blue">
+                    <h3>40</h3>
+                    <p>Total Present</p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
